@@ -34,6 +34,7 @@ module Writexlsx
       #
       def create_package
         write_worksheet_files
+        write_content_types_file
         write_chartsheet_files
         write_workbook_file
         write_chart_files
@@ -44,7 +45,6 @@ module Writexlsx
         write_shared_strings_file
         write_app_file
         write_core_file
-        write_content_types_file
         write_styles_file
         write_theme_file
         write_root_rels_file
